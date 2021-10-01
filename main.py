@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from Rosenblatt import Rosenblatt
 
 def decision(model, x):
-    return -(model.w[0] * x)/model.w[1]
+    return -(model.weights[0] * x)/model.weights[1]
 
 if __name__ == '__main__':
     perceptron = Rosenblatt(alfa=0.1, epochs=10)
